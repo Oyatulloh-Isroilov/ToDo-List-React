@@ -1,0 +1,119 @@
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(10, 211, 214);
+}
+
+/* Container styles */
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background: #38404b;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  color: #094ca8;
+  font-weight: 900;
+  text-align: center;
+  font-size: 35px;
+  word-spacing: 7px;
+  letter-spacing: 7px;
+  padding: 20px 0px;
+}
+
+/* Input styles */
+
+.InputForm {
+  display: flex;
+  width: 100%;
+  padding: 15px 10px;
+  align-items: center;
+  justify-content: space-between;
+  background: #676e79;
+  border-radius: 35px;
+}
+
+.InputForm input {
+  color: #d5d6d7;
+  background: transparent;
+  font-size: 23px;
+  border: none;
+  outline: none;
+}
+
+.InputForm input::placeholder {
+  color: #d5d6d7;
+}
+
+.InputForm button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 9px 15px;
+  font-size: 25px;
+  border-radius: 50px;
+  background: #014ab8;
+  transition: 0.5s;
+}
+
+button:hover {
+  transform: rotate(90deg);
+}
+
+button:checked {
+  transform: rotate(90deg);
+}
+
+li {
+  list-style: none;
+}
+
+/* to do list styles */
+
+.list {
+  margin-top: 25px;
+}
+
+.list span {
+  color: #d5d6d7;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.list .listItems {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 12px;
+}
+
+.listItems .items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #676e79;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.listItems .items:hover {
+  background-color: #f4f4f4;
+}
